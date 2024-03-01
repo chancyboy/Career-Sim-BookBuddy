@@ -1,0 +1,33 @@
+form {
+  text-align: center;
+  margin-top: 75px;
+}
+
+.register-form-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.label-first-name,
+.label-last-name,
+.label-email,
+.label-password {
+  margin: 0px;
+  margin-top: 4px;
+  font-size: 1em;
+  float: inline-start;
+}
+
+.register-form {
+  margin-right: 46vw;
+  margin-left: 46vw;
+  padding: 25px;
+  background-color: bisque;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+
+.register-form > button {
+  margin: 5px;
+}

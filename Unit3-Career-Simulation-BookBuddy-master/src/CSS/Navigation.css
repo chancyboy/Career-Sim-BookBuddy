@@ -1,0 +1,52 @@
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgb(128, 128, 128, 0.9);
+  border: black solid 1px;
+  z-index: 5;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+h1 {
+  flex: 1;
+  margin: 10px;
+}
+
+h1 > a {
+  text-decoration: none;
+  color: black;
+}
+
+.library-link-container,
+.account-link-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 6px;
+}
+
+.library-link-container {
+  flex: 1;
+}
+
+.Logout-button-container {
+  display: flex;
+  align-items: center;
+}
+
+.account-link-container > a,
+.library-link-container > a {
+  margin: 5px;
+  padding: 5px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border: solid black 1px;
+  background-color: rgb(101, 134, 136);
+}

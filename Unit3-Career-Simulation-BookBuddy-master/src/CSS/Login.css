@@ -1,0 +1,55 @@
+form {
+  text-align: center;
+  margin-top: 75px;
+}
+
+.login-form-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.label-email,
+.label-password {
+  margin: 0px;
+  margin-top: 4px;
+  font-size: 1em;
+  float: inline-start;
+}
+
+.login-form {
+  margin-right: 46vw;
+  margin-left: 46vw;
+  padding: 25px;
+  background-color: bisque;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+
+.login-form > button {
+  margin: 5px;
+  margin-top: 10px;
+}
+
+.login-error {
+  color: red;
+  animation: flashingRed 0.9s;
+}
+
+@keyframes flashingRed {
+  0% {
+    color: rgb(255, 255, 255);
+  }
+
+  50% {
+    color: red;
+  }
+
+  75% {
+    color: rgb(255, 255, 255);
+  }
+
+  100% {
+    color: red;
+  }
+}

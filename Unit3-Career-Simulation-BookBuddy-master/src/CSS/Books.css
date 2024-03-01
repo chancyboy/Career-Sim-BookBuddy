@@ -1,0 +1,90 @@
+.search-bar {
+  text-align: center;
+  margin-top: 5px;
+}
+.search-bar > input {
+  font-size: 1.5em;
+}
+
+.books-library {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.book-card {
+  position: relative;
+  width: 200px;
+  height: 588px;
+  margin: 10px;
+  background-color: rgb(190, 159, 126);
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 2%;
+}
+
+.books-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 55%;
+}
+
+/* Why do book covers have to be diffrent sizes :( */
+.books-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.books-title {
+  text-align: center;
+  font-size: 1.3em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+.books-author,
+.books-status {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.books-status {
+  position: absolute;
+  bottom: 0;
+  margin-top: 5px;
+  margin-left: 36px;
+}
+
+.books-description {
+  font-size: 0.8em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+@media (max-width: 440px) {
+  .book-card {
+    width: 140px;
+    height: 460px;
+  }
+
+  .books-image-container {
+    height: 40%;
+  }
+
+  .books-status {
+    margin-left: 7%;
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: 280px) {
+  .book-card {
+    width: 180px;
+  }
+}
